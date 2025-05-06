@@ -69,7 +69,7 @@ ul li a{
 .cart-icon img{
     width: 30px;
     height: 30px;
-    margin-right: 10px;
+    margin-right: 0px;
 }
 
 .item-image {
@@ -91,6 +91,28 @@ ul li a{
     font-size: 18px;
 }
 
+.quantity-btns{
+    width: 35px;
+    height: 30px;
+    margin-right: 10px;
+    background: #f1f1f1;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+.quantity-btnss{
+    width: 35px;
+    height: 30px;
+    background: #f1f1f1;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+    font-size: 16px;
+    transition: background 0.3s;
+}
 .item-price {
     color: #e74c3c;
     font-weight: bold;

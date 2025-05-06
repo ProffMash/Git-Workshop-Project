@@ -12,7 +12,7 @@
         <nav>
             <div class="logo">MyShop</div>
             <ul class="nav-links">
-                <li><a href="#">Home</a></li>
+                <li><a href="home.html">Home</a></li>
                 <li><a href="#">Products</a></li>
                 <li><a href="#">Cart</a></li>
                 <li><a href="#">Contact</a></li>
@@ -22,7 +22,7 @@
                     <input type="text" placeholder="Search products...">
                 </div>
                 <div class="cart-icon">
-                    <img src="https://www.citypng.com/public/uploads/preview/hd-shopping-cart-white-logo-icon-transparent-png-701751694973936amdcratijm.png" alt="Cart Icon">
+                     <a href="#"><img src="https://www.citypng.com/public/uploads/preview/hd-shopping-cart-white-logo-icon-transparent-png-701751694973936amdcratijm.png" alt="Cart Icon"></a>
                 </div>
             </div>
 
@@ -41,9 +41,11 @@
                     <div class="item-name">QuickBasket</div>
                     <div class="item-price">$99.99</div>
                     <div class="item-quantity">
-                        <button class="quantity-btn">-</button>
-                        <input type="number" value="1" min="1" class="quantity-input">
-                        <button class="quantity-btn">+</button>
+                        <button class="quantity-btns" onclick="DecreaseQuantityByLarge(document.getElementById('num10'))">-10</button>
+                        <button class="quantity-btn" onclick="DecreaseQuantity(document.getElementById('num1'))">-</button>
+                        <p id="num1" class="quantity-input">1</p>
+                        <button class="quantity-btn" onclick="IncreaseQuantity(document.getElementById('num1'))">+</button>
+                        <button class="quantity-btnss" onclick="IncreaseQuantityByLarge(document.getElementById('num10'))">+10</button>
                     </div>
                     <button class="remove-btn">Remove</button>
                 </div>
@@ -56,9 +58,11 @@
                     <div class="item-name">Smart Watch</div>
                     <div class="item-price">$199.99</div>
                     <div class="item-quantity">
-                        <button class="quantity-btn">-</button>
-                        <input type="number" value="1" min="1" class="quantity-input">
-                        <button class="quantity-btn">+</button>
+                        <button class="quantity-btns" onclick="DecreaseQuantityByLarge(document.getElementById('num10'))">-10</button>
+                        <button class="quantity-btn" onclick="DecreaseQuantity(document.getElementById('num2'))">-</button>
+                        <p id="num2" class="quantity-input">1</p>
+                        <button class="quantity-btn" onclick="IncreaseQuantity(document.getElementById('num2'))">+</button>
+                        <button class="quantity-btnss" onclick="IncreaseQuantityByLarge(document.getElementById('num10'))">+10</button>
                     </div>
                     <button class="remove-btn">Remove</button>
                 </div>
@@ -71,9 +75,11 @@
                     <div class="item-name">Bluetooth Speaker</div>
                     <div class="item-price">$49.99</div>
                     <div class="item-quantity">
-                        <button class="quantity-btn">-</button>
-                        <input type="number" value="1" min="1" class="quantity-input">
-                        <button class="quantity-btn">+</button>
+                        <button class="quantity-btns" onclick="DecreaseQuantityByLarge(document.getElementById('num10'))">-10</button>
+                        <button class="quantity-btn" onclick="DecreaseQuantity(document.getElementById('num3'))">-</button>
+                        <p id="num3" class="quantity-input">1</p>
+                        <button class="quantity-btn" onclick="IncreaseQuantity(document.getElementById('num3'))">+</button>
+                        <button class="quantity-btnss" onclick="IncreaseQuantityByLarge(document.getElementById('num10'))">+10</button>
                     </div>
                     <button class="remove-btn">Remove</button>
                 </div>
@@ -86,9 +92,11 @@
                     <div class="item-name">Laptop Stand</div>
                     <div class="item-price">$29.99</div>
                     <div class="item-quantity">
-                        <button class="quantity-btn">-</button>
-                        <input type="number" value="1" min="1" class="quantity-input">
-                        <button class="quantity-btn">+</button>
+                        <button class="quantity-btns" onclick="DecreaseQuantityByLarge(document.getElementById('num10'))">-10</button>
+                        <button class="quantity-btn" onclick="DecreaseQuantity(document.getElementById('num4'))">-</button>
+                        <p id="num4" class="quantity-input">1</p>
+                        <button class="quantity-btn" onclick="IncreaseQuantity(document.getElementById('num4'))">+</button>
+                        <button class="quantity-btnss" onclick="IncreaseQuantityByLarge(document.getElementById('num10'))">+10</button>
                     </div>
                     <button class="remove-btn">Remove</button>
                 </div>
@@ -101,9 +109,11 @@
                     <div class="item-name">Gaming Mouse</div>
                     <div class="item-price">$59.99</div>
                     <div class="item-quantity">
-                        <button class="quantity-btn">-</button>
-                        <input type="number" value="1" min="1" class="quantity-input">
-                        <button class="quantity-btn">+</button>
+                        <button class="quantity-btns" onclick="DecreaseQuantityByLarge(document.getElementById('num10'))">-10</button>
+                        <button class="quantity-btn" onclick="DecreaseQuantity(document.getElementById('num5'))">-</button>
+                        <p id="num5" class="quantity-input">1</p>
+                        <button class="quantity-btn" onclick="IncreaseQuantity(document.getElementById('num5'))">+</button>
+                        <button class="quantity-btnss" onclick="IncreaseQuantityByLarge(document.getElementById('num10'))">+10</button>
                     </div>
                     <button class="remove-btn">Remove</button>
                 </div>
@@ -116,9 +126,11 @@
                     <div class="item-name">Keyboard</div>
                     <div class="item-price">$89.99</div>
                     <div class="item-quantity">
-                        <button class="quantity-btn">-</button>
-                        <input type="number" value="1" min="1" class="quantity-input">
-                        <button class="quantity-btn">+</button>
+                        <button class="quantity-btns" onclick="DecreaseQuantityByLarge(document.getElementById('num10'))">-10</button>
+                        <button class="quantity-btn" onclick="DecreaseQuantity(document.getElementById('num6'))">-</button>
+                        <p id="num6" class="quantity-input">1</p>
+                        <button class="quantity-btn" onclick="IncreaseQuantity(document.getElementById('num6'))">+</button>
+                        <button class="quantity-btnss" onclick="IncreaseQuantityByLarge(document.getElementById('num10'))">+10</button>
                     </div>
                     <button class="remove-btn">Remove</button>
                 </div>
@@ -131,9 +143,11 @@
                     <div class="item-name">Portable Charger</div>
                     <div class="item-price">$39.99</div>
                     <div class="item-quantity">
-                        <button class="quantity-btn">-</button>
-                        <input type="number" value="1" min="1" class="quantity-input">
-                        <button class="quantity-btn">+</button>
+                        <button class="quantity-btns" onclick="DecreaseQuantityByLarge(document.getElementById('num10'))">-10</button>
+                        <button class="quantity-btn" onclick="DecreaseQuantity(document.getElementById('num7'))">-</button>
+                        <p id="num7" class="quantity-input">1</p>
+                        <button class="quantity-btn" onclick="IncreaseQuantity(document.getElementById('num7'))">+</button>
+                        <button class="quantity-btnss" onclick="IncreaseQuantityByLarge(document.getElementById('num10'))">+10</button>
                     </div>
                     <button class="remove-btn">Remove</button>
                 </div>
@@ -146,9 +160,11 @@
                     <div class="item-name">Webcam</div>
                     <div class="item-price">$69.99</div>
                     <div class="item-quantity">
-                        <button class="quantity-btn">-</button>
-                        <input type="number" value="1" min="1" class="quantity-input">
-                        <button class="quantity-btn">+</button>
+                        <button class="quantity-btns" onclick="DecreaseQuantityByLarge(document.getElementById('num10'))">-10</button>
+                        <button class="quantity-btn" onclick="DecreaseQuantity(document.getElementById('num8'))">-</button>
+                        <p id="num8" class="quantity-input">1</p>
+                        <button class="quantity-btn" onclick="IncreaseQuantity(document.getElementById('num8'))">+</button>
+                        <button class="quantity-btnss" onclick="IncreaseQuantityByLarge(document.getElementById('num10'))">+10</button>
                     </div>
                     <button class="remove-btn">Remove</button>
                 </div>
@@ -161,9 +177,11 @@
                     <div class="item-name">Desk Lamp</div>
                     <div class="item-price">$24.99</div>
                     <div class="item-quantity">
-                        <button class="quantity-btn">-</button>
-                        <input type="number" value="1" min="1" class="quantity-input">
-                        <button class="quantity-btn">+</button>
+                        <button class="quantity-btns" onclick="DecreaseQuantityByLarge(document.getElementById('num10'))">-10</button>
+                        <button class="quantity-btn" onclick="DecreaseQuantity(document.getElementById('num9'))">-</button>
+                        <p id="num9" class="quantity-input">1</p>
+                        <button class="quantity-btn" onclick="IncreaseQuantity(document.getElementById('num9'))">+</button>
+                        <button class="quantity-btnss" onclick="IncreaseQuantityByLarge(document.getElementById('num10'))">+10</button>
                     </div>
                     <button class="remove-btn">Remove</button>
                 </div>
@@ -176,9 +194,12 @@
                     <div class="item-name">USB Hub</div>
                     <div class="item-price">$19.99</div>
                     <div class="item-quantity">
-                        <button class="quantity-btn">-</button>
-                        <input type="number" value="1" min="1" class="quantity-input">
-                        <button class="quantity-btn">+</button>
+                        <button class="quantity-btns" onclick="DecreaseQuantityByLarge(document.getElementById('num10'))">-10</button>
+                        <button class="quantity-btn" onclick="DecreaseQuantity(document.getElementById('num10'))">-</button>
+                        <p id="num10" class="quantity-input">1</p>
+                        <button class="quantity-btn" onclick="IncreaseQuantity(document.getElementById('num10'))">+</button>
+                        <button class="quantity-btnss" onclick="IncreaseQuantityByLarge(document.getElementById('num10'))">+10</button>
+
                     </div>
                     <button class="remove-btn">Remove</button>
                 </div>
@@ -188,7 +209,9 @@
         <div class="cart-summary">
             <div class="summary-row">
                 <span>Subtotal:</span>
-                <span>$799.90</span>
+                <span class="subtotal">
+                    $799.90
+                </span>
             </div>
             <div class="summary-row">
                 <span>Shipping:</span>
@@ -196,12 +219,15 @@
             </div>
             <div class="summary-row total">
                 <span>Total:</span>
-                <span>$805.89</span>
+                <span id="total">$805.89</span>
             </div>
+        </div>
+        
             
             <button class="checkout-btn">Proceed to Checkout</button>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 <footer>
     <div class="footer">
